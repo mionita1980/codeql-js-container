@@ -15,6 +15,7 @@ RUN /codeql/codeql pack download codeql/javascript-queries
 RUN mkdir -p /project
 
 COPY run.sh /run.sh
+RUN chmod +x /run.sh
 
 WORKDIR /project
 
